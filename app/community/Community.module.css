@@ -1,0 +1,323 @@
+.communityPage {
+  min-height: 100vh;
+  background: #ffffff;
+  color: #0b1f33;
+}
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+  min-height: 430px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+
+  padding: 80px 20px;
+
+  background: linear-gradient(rgba(0, 43, 82, 0.78), rgba(0, 43, 82, 0.78)),
+    url("/images/gallery/g1.jpg") center/cover no-repeat;
+}
+
+.heroOverlay {
+  max-width: 850px;
+  color: #ffffff;
+}
+
+.heroSubtitle {
+  margin: 0 0 15px;
+
+  font-size: 13px;
+  font-weight: 700;
+
+  letter-spacing: 3px;
+}
+
+.hero h1 {
+  margin: 0 0 20px;
+
+  font-size: 52px;
+  line-height: 1.15;
+
+  font-weight: 700;
+
+  text-transform: uppercase;
+}
+
+.hero p:last-child {
+  max-width: 700px;
+  margin: 0 auto;
+
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+/* =========================
+   GENERAL
+========================= */
+
+.container {
+  width: 100%;
+  max-width: 1150px;
+
+  margin: 0 auto;
+  padding: 0 20px;
+
+  box-sizing: border-box;
+}
+
+.sectionLabel {
+  margin: 0 0 12px;
+
+  color: #0066b3;
+
+  font-size: 13px;
+  font-weight: 700;
+
+  letter-spacing: 2px;
+}
+
+/* =========================
+   INTRO
+========================= */
+
+.introSection {
+  padding: 95px 0;
+}
+
+.introContent {
+  max-width: 850px;
+  margin: 0 auto;
+
+  text-align: center;
+}
+
+.introContent h2 {
+  margin: 0 0 25px;
+
+  font-size: 40px;
+  line-height: 1.25;
+
+  color: #0b1f33;
+}
+
+.introContent p:not(.sectionLabel) {
+  margin: 0 auto 18px;
+
+  color: #536678;
+
+  font-size: 16px;
+  line-height: 1.9;
+}
+
+/* =========================
+   COMMUNITY SECTION
+========================= */
+
+.communitySection {
+  padding: 90px 0;
+
+  background: #f6faff;
+}
+
+.sectionHeading {
+  max-width: 750px;
+
+  margin: 0 auto 55px;
+
+  text-align: center;
+}
+
+.sectionHeading h2 {
+  margin: 0 0 20px;
+
+  font-size: 38px;
+  line-height: 1.25;
+}
+
+.sectionHeading > p:last-child {
+  margin: 0;
+
+  color: #536678;
+
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+/* =========================
+   CARDS
+========================= */
+
+.cards {
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 30px;
+}
+
+.card {
+  display: flex;
+
+  gap: 25px;
+
+  padding: 40px;
+
+  background: #ffffff;
+
+  border: 1px solid #e1eaf2;
+
+  border-radius: 8px;
+
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+
+  box-shadow: 0 18px 40px rgba(0, 60, 110, 0.1);
+}
+
+.cardIcon {
+  flex-shrink: 0;
+
+  width: 65px;
+  height: 65px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #0066b3;
+
+  color: #ffffff;
+}
+
+.cardIcon span {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.cardContent h3 {
+  margin: 0 0 15px;
+
+  font-size: 25px;
+
+  color: #0066b3;
+}
+
+.cardContent p {
+  margin: 0 0 14px;
+
+  color: #536678;
+
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+.cardContent p:last-child {
+  margin-bottom: 0;
+}
+
+/* =========================
+   COMMITMENT
+========================= */
+
+.commitmentSection {
+  padding: 100px 0;
+}
+
+.commitment {
+  max-width: 800px;
+
+  margin: 0 auto;
+
+  text-align: center;
+}
+
+.commitment h2 {
+  margin: 0 0 20px;
+
+  font-size: 40px;
+  line-height: 1.25;
+}
+
+.commitment p:last-child {
+  margin: 0;
+
+  color: #536678;
+
+  font-size: 16px;
+  line-height: 1.9;
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 768px) {
+  .hero {
+    min-height: 360px;
+  }
+
+  .hero h1 {
+    font-size: 36px;
+  }
+
+  .hero p:last-child {
+    font-size: 16px;
+  }
+
+  .introSection {
+    padding: 65px 0;
+  }
+
+  .introContent h2 {
+    font-size: 30px;
+  }
+
+  .communitySection {
+    padding: 65px 0;
+  }
+
+  .sectionHeading h2 {
+    font-size: 30px;
+  }
+
+  .cards {
+    grid-template-columns: 1fr;
+  }
+
+  .card {
+    padding: 30px 25px;
+  }
+
+  .commitmentSection {
+    padding: 70px 0;
+  }
+
+  .commitment h2 {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero h1 {
+    font-size: 30px;
+  }
+
+  .card {
+    flex-direction: column;
+  }
+
+  .cardIcon {
+    width: 55px;
+    height: 55px;
+  }
+}

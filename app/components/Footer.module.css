@@ -1,0 +1,183 @@
+.footer {
+  --navy: #08213f;
+  --navy-deep: #051730;
+  --ocean: #0f5fa6;
+  --steel: #6fa8dc;
+  --fog: #c7d3e0;
+  --border-color: rgba(255, 255, 255, 0.12);
+
+  background: var(--navy);
+  color: var(--fog);
+  font-family: "Space Grotesk", sans-serif;
+}
+
+/* Draft marks (waterline ticks) — mirrors the navbar's bottom edge */
+
+.draftMarks {
+  height: 3px;
+  width: 100%;
+  background-image: repeating-linear-gradient(
+    90deg,
+    var(--steel) 0px,
+    var(--steel) 2px,
+    transparent 2px,
+    transparent 14px
+  );
+}
+
+.inner {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 3.5rem 1.25rem 2rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2.5rem;
+}
+
+/* Brand column */
+
+.brandBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+  max-width: 340px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  text-decoration: none;
+}
+
+.logo {
+  height: 38px;
+  width: 38px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.brandName {
+  font-size: 1.0625rem;
+  font-weight: 500;
+  color: #ffffff;
+  letter-spacing: -0.01em;
+}
+
+.brandTagline {
+  font-size: 0.875rem;
+  line-height: 1.6;
+  color: var(--fog);
+}
+
+/* Shared column heading */
+
+.heading {
+  font-size: 0.8125rem;
+  font-weight: 500;
+  color: #ffffff;
+  letter-spacing: 0.02em;
+  margin: 0 0 1.1rem;
+}
+
+/* Company links */
+
+.linkList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.link {
+  font-size: 0.9375rem;
+  color: var(--fog);
+  text-decoration: none;
+  transition: color 0.15s ease;
+}
+
+.link:hover {
+  color: #ffffff;
+}
+
+/* Contact info */
+
+.contactList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+}
+
+.contactItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.7rem;
+}
+
+.contactIcon {
+  width: 18px;
+  height: 18px;
+  color: var(--steel);
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.contactText {
+  font-size: 0.9375rem;
+  line-height: 1.6;
+  color: var(--fog);
+}
+
+.contactText a {
+  color: var(--fog);
+  text-decoration: none;
+}
+
+.contactText a:hover {
+  color: #ffffff;
+}
+
+/* Bottom bar */
+
+.bottomBar {
+  border-top: 1px solid var(--border-color);
+  padding: 1.25rem 1.25rem;
+}
+
+.bottomInner {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.copyright {
+  font-size: 0.8125rem;
+  color: var(--fog);
+  text-align: center;
+}
+
+/* Tablet and up: three columns */
+
+@media (min-width: 768px) {
+  .inner {
+    grid-template-columns: 1.2fr 1fr 1.3fr;
+    gap: 2rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .inner {
+    padding: 4rem 2rem 2.5rem;
+  }
+
+  .bottomBar {
+    padding: 1.25rem 2rem;
+  }
+}

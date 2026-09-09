@@ -1,0 +1,574 @@
+.aboutPage {
+  min-height: 100vh;
+  background: #ffffff;
+  color: #0b1f33;
+}
+
+/* =========================
+   CONTAINER
+========================= */
+
+.container {
+  width: 100%;
+  max-width: 1150px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+  min-height: 440px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+
+  padding: 80px 20px;
+
+  background:
+    linear-gradient(
+      rgba(0, 43, 82, 0.78),
+      rgba(0, 43, 82, 0.78)
+    ),
+    url("/images/gallery/g1.jpg") center/cover no-repeat;
+}
+
+.heroOverlay {
+  max-width: 850px;
+  color: #ffffff;
+}
+
+.heroSubtitle {
+  margin: 0 0 15px;
+
+  font-size: 13px;
+  font-weight: 700;
+
+  letter-spacing: 3px;
+}
+
+.hero h1 {
+  margin: 0 0 20px;
+
+  font-size: 58px;
+  line-height: 1.1;
+
+  text-transform: uppercase;
+}
+
+.heroOverlay > p:last-child {
+  max-width: 700px;
+
+  margin: 0 auto;
+
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+/* =========================
+   GENERAL
+========================= */
+
+.sectionLabel {
+  margin: 0 0 12px;
+
+  color: #0066b3;
+
+  font-size: 13px;
+  font-weight: 700;
+
+  letter-spacing: 2px;
+}
+
+/* =========================
+   WHO WE ARE
+========================= */
+
+.whoSection {
+  padding: 100px 0;
+}
+
+.whoGrid {
+  display: grid;
+
+  grid-template-columns: 1.1fr 0.9fr;
+
+  gap: 70px;
+
+  align-items: center;
+}
+
+.whoContent h2 {
+  margin: 0 0 25px;
+
+  font-size: 42px;
+  line-height: 1.2;
+}
+
+.whoContent p:not(.sectionLabel) {
+  margin: 0 0 18px;
+
+  color: #536678;
+
+  font-size: 16px;
+  line-height: 1.9;
+}
+
+.whoImage {
+  position: relative;
+}
+
+.whoImage img {
+  width: 100%;
+
+  height: 520px;
+
+  object-fit: cover;
+
+  border-radius: 8px;
+
+  display: block;
+}
+
+.experienceBadge {
+  position: absolute;
+
+  left: -25px;
+  bottom: 30px;
+
+  width: 175px;
+
+  padding: 22px;
+
+  background: #0066b3;
+
+  color: #ffffff;
+
+  border-radius: 6px;
+
+  text-align: center;
+
+  box-shadow: 0 12px 30px rgba(0, 60, 110, 0.2);
+}
+
+.experienceBadge strong {
+  display: block;
+
+  font-size: 38px;
+  line-height: 1;
+
+  margin-bottom: 8px;
+}
+
+.experienceBadge span {
+  display: block;
+
+  font-size: 12px;
+
+  line-height: 1.4;
+}
+
+/* =========================
+   VISION
+========================= */
+
+.visionSection {
+  padding: 90px 0;
+
+  background: #f5f9fd;
+}
+
+.visionContent,
+.missionContent {
+  display: grid;
+
+  grid-template-columns: 100px 1fr;
+
+  gap: 35px;
+
+  align-items: start;
+
+  max-width: 900px;
+
+  margin: 0 auto;
+}
+
+.number {
+  font-size: 48px;
+
+  font-weight: 700;
+
+  color: #0066b3;
+
+  line-height: 1;
+}
+
+.visionContent h2,
+.missionContent h2 {
+  margin: 0 0 20px;
+
+  font-size: 38px;
+}
+
+.visionContent p:last-child,
+.missionContent p:last-child {
+  max-width: 750px;
+
+  margin: 0;
+
+  color: #536678;
+
+  font-size: 17px;
+
+  line-height: 1.9;
+}
+
+/* =========================
+   MISSION
+========================= */
+
+.missionSection {
+  padding: 90px 0;
+
+  background: #ffffff;
+}
+
+/* =========================
+   CORE VALUES
+========================= */
+
+.valuesSection {
+  padding: 100px 0;
+
+  background: #f5f9fd;
+}
+
+.sectionHeading {
+  max-width: 750px;
+
+  margin: 0 auto 55px;
+
+  text-align: center;
+}
+
+.sectionHeading h2 {
+  margin: 0 0 20px;
+
+  font-size: 42px;
+}
+
+.sectionHeading > p:last-child {
+  margin: 0;
+
+  color: #536678;
+
+  font-size: 16px;
+
+  line-height: 1.8;
+}
+
+.valuesGrid {
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 20px;
+}
+
+.valueCard {
+  padding: 35px 25px;
+
+  background: #ffffff;
+
+  border: 1px solid #e1eaf2;
+
+  border-radius: 7px;
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.valueCard:hover {
+  transform: translateY(-6px);
+
+  box-shadow:
+    0 15px 35px rgba(0, 60, 110, 0.1);
+}
+
+.valueNumber {
+  margin-bottom: 25px;
+
+  color: #0066b3;
+
+  font-size: 14px;
+
+  font-weight: 700;
+
+  letter-spacing: 1px;
+}
+
+.valueCard h3 {
+  margin: 0 0 15px;
+
+  font-size: 21px;
+}
+
+.valueCard p {
+  margin: 0;
+
+  color: #536678;
+
+  font-size: 14px;
+
+  line-height: 1.8;
+}
+
+/* =========================
+   TEAM
+========================= */
+
+.teamSection {
+  padding: 100px 0;
+}
+
+.teamGrid {
+  display: grid;
+
+  grid-template-columns: 0.9fr 1.1fr;
+
+  gap: 70px;
+
+  align-items: center;
+}
+
+.teamImage img {
+  display: block;
+
+  width: 100%;
+
+  height: 500px;
+
+  object-fit: cover;
+
+  border-radius: 8px;
+}
+
+.teamContent h2 {
+  margin: 0 0 25px;
+
+  font-size: 42px;
+
+  line-height: 1.2;
+}
+
+.teamContent > p:not(.sectionLabel) {
+  margin: 0 0 18px;
+
+  color: #536678;
+
+  font-size: 16px;
+
+  line-height: 1.9;
+}
+
+.teamHighlight {
+  display: flex;
+
+  gap: 15px;
+
+  margin-top: 30px;
+
+  padding: 20px;
+
+  background: #f5f9fd;
+
+  border-left: 4px solid #0066b3;
+}
+
+.teamHighlight span {
+  display: none;
+}
+
+.teamHighlight p {
+  margin: 0;
+
+  color: #0b1f33;
+
+  font-size: 15px;
+
+  font-weight: 600;
+
+  line-height: 1.7;
+}
+
+/* =========================
+   EXCELLENCE
+========================= */
+
+.excellenceSection {
+  min-height: 350px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  text-align: center;
+
+  padding: 70px 20px;
+
+  background:
+    linear-gradient(
+      rgba(0, 45, 85, 0.85),
+      rgba(0, 45, 85, 0.85)
+    ),
+    url("/images/gallery/g4.jpg") center/cover no-repeat;
+}
+
+.excellenceOverlay {
+  color: #ffffff;
+}
+
+.excellenceOverlay .sectionLabel {
+  color: #ffffff;
+}
+
+.excellenceOverlay h2 {
+  margin: 0 0 15px;
+
+  font-size: 46px;
+}
+
+.excellenceOverlay p:last-child {
+  margin: 0;
+
+  font-size: 18px;
+
+  letter-spacing: 3px;
+}
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 1000px) {
+  .whoGrid,
+  .teamGrid {
+    grid-template-columns: 1fr;
+
+    gap: 50px;
+  }
+
+  .valuesGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .whoImage {
+    max-width: 700px;
+    margin: 0 auto;
+  }
+
+  .teamImage {
+    max-width: 700px;
+  }
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 768px) {
+  .hero {
+    min-height: 360px;
+  }
+
+  .hero h1 {
+    font-size: 38px;
+  }
+
+  .heroOverlay > p:last-child {
+    font-size: 16px;
+  }
+
+  .whoSection,
+  .valuesSection,
+  .teamSection {
+    padding: 65px 0;
+  }
+
+  .whoContent h2,
+  .teamContent h2 {
+    font-size: 32px;
+  }
+
+  .whoImage img,
+  .teamImage img {
+    height: 380px;
+  }
+
+  .experienceBadge {
+    left: 15px;
+    bottom: 15px;
+  }
+
+  .visionSection,
+  .missionSection {
+    padding: 65px 0;
+  }
+
+  .visionContent,
+  .missionContent {
+    grid-template-columns: 1fr;
+
+    gap: 20px;
+  }
+
+  .number {
+    font-size: 38px;
+  }
+
+  .visionContent h2,
+  .missionContent h2 {
+    font-size: 32px;
+  }
+
+  .sectionHeading h2 {
+    font-size: 32px;
+  }
+
+  .valuesGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .excellenceOverlay h2 {
+    font-size: 34px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero h1 {
+    font-size: 32px;
+  }
+
+  .whoImage img,
+  .teamImage img {
+    height: 320px;
+  }
+
+  .experienceBadge {
+    width: 145px;
+    padding: 18px;
+  }
+
+  .experienceBadge strong {
+    font-size: 30px;
+  }
+}

@@ -1,0 +1,189 @@
+.contactPage {
+  min-height: 100vh;
+  background: #ffffff;
+  color: #0b1f33;
+}
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+  min-height: 380px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  background: linear-gradient(rgba(0, 42, 80, 0.78), rgba(0, 42, 80, 0.78)),
+    url("/images/gallery/g1.jpg") center/cover no-repeat;
+
+  padding: 80px 20px;
+}
+
+.heroOverlay {
+  max-width: 800px;
+  color: #ffffff;
+}
+
+.heroSubtitle {
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  margin-bottom: 15px;
+}
+
+.hero h1 {
+  font-size: 56px;
+  margin: 0 0 20px;
+  font-weight: 700;
+}
+
+.hero p {
+  font-size: 18px;
+  line-height: 1.7;
+  margin: 0 auto;
+  max-width: 650px;
+}
+
+/* =========================
+   CONTACT SECTION
+========================= */
+
+.contactSection {
+  padding: 90px 20px;
+}
+
+.container {
+  max-width: 1150px;
+  margin: 0 auto;
+}
+
+/* =========================
+   INFORMATION CARDS
+========================= */
+
+.contactGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  margin-bottom: 90px;
+}
+
+.infoCard {
+  padding: 40px;
+  background: #f7faff;
+  border: 1px solid #e4edf5;
+  border-radius: 8px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.infoCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(0, 50, 90, 0.1);
+}
+
+.icon {
+  width: 65px;
+  height: 65px;
+  margin: 0 auto 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+  background: #0066b3;
+  font-size: 28px;
+}
+
+.infoCard h2 {
+  margin: 0 0 20px;
+  font-size: 20px;
+  color: #0066b3;
+  letter-spacing: 1px;
+}
+
+.companyName {
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.infoCard a {
+  display: block;
+  color: #405568;
+  text-decoration: none;
+  line-height: 1.8;
+  margin-bottom: 8px;
+}
+
+.infoCard a:hover {
+  color: #0066b3;
+}
+
+/* =========================
+   MESSAGE HEADER
+========================= */
+
+.messageHeader {
+  text-align: center;
+  margin-bottom: 45px;
+}
+
+.messageHeader p {
+  margin: 0 0 10px;
+  color: #0066b3;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.messageHeader h2 {
+  margin: 0;
+  font-size: 38px;
+  color: #0b1f33;
+}
+
+.messageHeader span {
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #0066b3;
+  margin: 18px auto 0;
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 768px) {
+  .hero {
+    min-height: 320px;
+  }
+
+  .hero h1 {
+    font-size: 40px;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+
+  .contactSection {
+    padding: 60px 20px;
+  }
+
+  .contactGrid {
+    grid-template-columns: 1fr;
+    margin-bottom: 60px;
+  }
+
+  .infoCard {
+    padding: 30px 20px;
+  }
+
+  .messageHeader h2 {
+    font-size: 30px;
+  }
+}

@@ -1,0 +1,109 @@
+.hero {
+  position: relative;
+  min-height: 78vh;
+  display: flex;
+  align-items: flex-end;
+  overflow: hidden;
+  font-family: "Space Grotesk", sans-serif;
+}
+
+.image {
+  object-fit: cover;
+  z-index: 0;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: linear-gradient(
+    180deg,
+    rgba(5, 23, 48, 0.35) 0%,
+    rgba(5, 23, 48, 0.55) 55%,
+    rgba(5, 23, 48, 0.88) 100%
+  );
+}
+
+.content {
+  position: relative;
+  z-index: 2;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 3rem 1.25rem 3.5rem;
+  width: 100%;
+}
+
+.eyebrow {
+  font-size: 0.875rem;
+  color: #9fc4ea;
+  margin: 0 0 0.9rem;
+}
+
+.headline {
+  font-size: 2rem;
+  line-height: 1.15;
+  font-weight: 500;
+  color: #ffffff;
+  max-width: 15ch;
+  margin: 0 0 1.5rem;
+  letter-spacing: -0.01em;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.9rem;
+}
+
+.primaryButton {
+  padding: 0.8rem 1.5rem;
+  border-radius: 6px;
+  background: #0f5fa6;
+  color: #ffffff;
+  font-size: 0.9375rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: background-color 0.15s ease;
+}
+
+.primaryButton:hover {
+  background: #0c447c;
+}
+
+.secondaryButton {
+  padding: 0.8rem 1.5rem;
+  border-radius: 6px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  color: #ffffff;
+  font-size: 0.9375rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: background-color 0.15s ease, border-color 0.15s ease;
+}
+
+.secondaryButton:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: #ffffff;
+}
+
+@media (min-width: 640px) {
+  .headline {
+    font-size: 2.75rem;
+    max-width: 16ch;
+  }
+}
+
+@media (min-width: 1024px) {
+  .hero {
+    min-height: 86vh;
+  }
+
+  .content {
+    padding: 3rem 2rem 4.5rem;
+  }
+
+  .headline {
+    font-size: 3.5rem;
+    max-width: 18ch;
+  }
+}

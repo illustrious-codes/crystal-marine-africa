@@ -1,0 +1,298 @@
+.servicesPage {
+  min-height: 100vh;
+  background: #f5f9fd;
+  color: #102a43;
+}
+
+/* HERO */
+
+.hero {
+  padding: 120px 20px 90px;
+  text-align: center;
+  background: #ffffff;
+}
+
+.hero span {
+  display: block;
+  margin-bottom: 15px;
+  color: #0878d1;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+
+.hero h1 {
+  max-width: 800px;
+  margin: 0 auto 20px;
+  font-size: 52px;
+  line-height: 1.15;
+  font-weight: 800;
+}
+
+.hero h1 strong {
+  color: #0878d1;
+}
+
+.hero p {
+  max-width: 700px;
+  margin: auto;
+  color: #61758a;
+  font-size: 17px;
+  line-height: 1.8;
+}
+
+/* SERVICES */
+
+.servicesContainer {
+  width: min(1200px, 92%);
+  margin: 0 auto;
+  padding: 80px 0 120px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+/* CARD */
+
+.serviceCard {
+  overflow: hidden;
+  background: #ffffff;
+  border: 1px solid #e2ebf3;
+  border-radius: 20px;
+  box-shadow: 0 15px 45px rgba(0, 70, 130, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.serviceCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 55px rgba(0, 70, 130, 0.15);
+}
+
+/* IMAGE */
+
+.imageWrapper {
+  position: relative;
+  height: 360px;
+  overflow: hidden;
+}
+
+.serviceImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+.serviceCard:hover .serviceImage {
+  transform: scale(1.05);
+}
+
+.imageWrapper::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, transparent 40%, rgba(0, 30, 60, 0.7));
+}
+
+/* NUMBER */
+
+.number {
+  position: absolute;
+  right: 30px;
+  bottom: 25px;
+  z-index: 2;
+
+  width: 60px;
+  height: 60px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+  background: #0878d1;
+  color: #ffffff;
+
+  font-size: 17px;
+  font-weight: 700;
+}
+
+/* CONTENT */
+
+.serviceContent {
+  padding: 45px;
+}
+
+.serviceContent h2 {
+  margin: 0 0 20px;
+  color: #102a43;
+  font-size: 29px;
+  line-height: 1.3;
+  font-weight: 800;
+}
+
+.description {
+  margin-bottom: 25px;
+  color: #536b80;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+/* LIST */
+
+.serviceContent ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.serviceContent li {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+
+  padding: 13px 0;
+
+  color: #40566b;
+  border-bottom: 1px solid #edf2f7;
+
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.serviceContent li:last-child {
+  border-bottom: none;
+}
+
+.serviceContent li span {
+  flex-shrink: 0;
+
+  width: 24px;
+  height: 24px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #e8f4ff;
+  color: #0878d1;
+
+  font-size: 13px;
+  font-weight: 700;
+}
+
+/* PARAGRAPHS */
+
+.paragraphs {
+  margin-top: 25px;
+}
+
+.paragraphs p {
+  margin-bottom: 18px;
+  color: #536b80;
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+/* EMAIL */
+
+.emailBox {
+  margin-top: 30px;
+  padding: 20px;
+
+  background: #eef7ff;
+  border-left: 4px solid #0878d1;
+  border-radius: 0 10px 10px 0;
+}
+
+.emailBox strong {
+  display: block;
+  margin-bottom: 8px;
+  color: #102a43;
+}
+
+.emailBox p {
+  margin: 0;
+  color: #0878d1;
+  font-size: 14px;
+}
+
+/* TABLET */
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 90px 20px 70px;
+  }
+
+  .hero h1 {
+    font-size: 40px;
+  }
+
+  .servicesContainer {
+    padding: 60px 0 80px;
+  }
+
+  .imageWrapper {
+    height: 280px;
+  }
+
+  .serviceContent {
+    padding: 30px;
+  }
+
+  .serviceContent h2 {
+    font-size: 24px;
+  }
+}
+
+/* MOBILE */
+
+@media (max-width: 480px) {
+  .hero {
+    padding: 70px 18px 55px;
+  }
+
+  .hero h1 {
+    font-size: 32px;
+  }
+
+  .hero p {
+    font-size: 15px;
+  }
+
+  .servicesContainer {
+    width: 94%;
+    padding: 45px 0 70px;
+  }
+
+  .imageWrapper {
+    height: 230px;
+  }
+
+  .number {
+    right: 20px;
+    bottom: 20px;
+    width: 50px;
+    height: 50px;
+  }
+
+  .serviceContent {
+    padding: 25px 20px;
+  }
+
+  .serviceContent h2 {
+    font-size: 21px;
+  }
+
+  .description {
+    font-size: 14px;
+  }
+
+  .serviceContent li {
+    font-size: 14px;
+  }
+}

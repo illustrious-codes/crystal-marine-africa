@@ -1,0 +1,91 @@
+.section {
+  font-family: "Space Grotesk", sans-serif;
+  background: #ffffff;
+  padding: 3.5rem 1.25rem;
+}
+
+.inner {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.75rem;
+  font-weight: 500;
+  color: #08213f;
+  margin: 0 0 2rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.75rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+  padding-top: 1.5rem;
+  border-top: 2px solid #e3e8ef;
+}
+
+.iconWrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 44px;
+  width: 44px;
+  border-radius: 6px;
+  background: #f4f7fa;
+  color: #0f5fa6;
+}
+
+.icon {
+  height: 22px;
+  width: 22px;
+}
+
+.title {
+  font-size: 1.0625rem;
+  font-weight: 500;
+  color: #08213f;
+  text-decoration: none;
+  line-height: 1.4;
+}
+
+.title:hover {
+  color: #0f5fa6;
+}
+
+.description {
+  font-size: 0.9375rem;
+  line-height: 1.65;
+  color: #4a5768;
+  margin: 0;
+}
+
+@media (min-width: 640px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .section {
+    padding: 5rem 2rem;
+  }
+
+  .heading {
+    font-size: 2.25rem;
+    margin-bottom: 2.75rem;
+  }
+
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.5rem;
+  }
+}

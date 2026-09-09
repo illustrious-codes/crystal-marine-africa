@@ -1,0 +1,416 @@
+.policiesPage {
+  min-height: 100vh;
+  background: #f5f9fd;
+  color: #102a43;
+}
+
+/* =========================================
+   HERO
+========================================= */
+
+.hero {
+  padding: 120px 20px 100px;
+  background: #ffffff;
+  text-align: center;
+}
+
+.heroContent {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.heroSubtitle {
+  display: inline-block;
+  margin-bottom: 18px;
+
+  color: #0878d1;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+
+.hero h1 {
+  margin: 0 0 20px;
+
+  color: #102a43;
+  font-size: 56px;
+  line-height: 1.1;
+  font-weight: 800;
+}
+
+.hero h1 strong {
+  color: #0878d1;
+}
+
+.hero p {
+  max-width: 700px;
+  margin: 0 auto;
+
+  color: #60758a;
+  font-size: 17px;
+  line-height: 1.8;
+}
+
+/* =========================================
+   INTRODUCTION
+========================================= */
+
+.introduction {
+  padding: 90px 20px;
+  background: #0878d1;
+}
+
+.introductionContent {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.sectionLabel {
+  display: block;
+  margin-bottom: 15px;
+
+  color: #dceeff;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+
+.introduction h2 {
+  margin: 0 0 22px;
+
+  color: #ffffff;
+  font-size: 40px;
+  line-height: 1.25;
+  font-weight: 800;
+}
+
+.introduction h2 span {
+  color: #dceeff;
+}
+
+.introduction p {
+  margin: 0;
+
+  color: #edf7ff;
+  font-size: 16px;
+  line-height: 1.9;
+}
+
+/* =========================================
+   POLICIES SECTION
+========================================= */
+
+.policiesSection {
+  padding: 100px 20px 120px;
+}
+
+.container {
+  width: min(1150px, 100%);
+  margin: 0 auto;
+}
+
+/* =========================================
+   SECTION HEADING
+========================================= */
+
+.sectionHeading {
+  max-width: 750px;
+  margin: 0 auto 60px;
+  text-align: center;
+}
+
+.sectionHeading > span {
+  display: block;
+  margin-bottom: 15px;
+
+  color: #0878d1;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+
+.sectionHeading h2 {
+  margin: 0 0 18px;
+
+  color: #102a43;
+  font-size: 42px;
+  line-height: 1.2;
+  font-weight: 800;
+}
+
+.sectionHeading h2 strong {
+  color: #0878d1;
+}
+
+.sectionHeading p {
+  margin: 0;
+
+  color: #60758a;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+/* =========================================
+   POLICY GRID
+========================================= */
+
+.policyGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+/* =========================================
+   POLICY CARD
+========================================= */
+
+.policyCard {
+  padding: 35px;
+
+  background: #ffffff;
+  border: 1px solid #e2ebf3;
+  border-radius: 18px;
+
+  box-shadow: 0 12px 35px rgba(0, 70, 130, 0.07);
+
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.policyCard:hover {
+  transform: translateY(-6px);
+
+  border-color: #b9dcf7;
+
+  box-shadow: 0 18px 45px rgba(0, 70, 130, 0.13);
+}
+
+/* =========================================
+   POLICY TOP
+========================================= */
+
+.policyTop {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+
+  margin-bottom: 28px;
+}
+
+.policyNumber {
+  width: 52px;
+  height: 52px;
+
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #e8f4ff;
+  color: #0878d1;
+
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.policyLine {
+  width: 100%;
+  height: 1px;
+
+  background: #e5edf4;
+}
+
+/* =========================================
+   POLICY CONTENT
+========================================= */
+
+.policyContent h3 {
+  margin: 0 0 17px;
+
+  color: #102a43;
+
+  font-size: 23px;
+  line-height: 1.35;
+  font-weight: 800;
+}
+
+.policyContent p {
+  margin: 0;
+
+  color: #536b80;
+
+  font-size: 15px;
+  line-height: 1.85;
+}
+
+/* =========================================
+   CLOSING
+========================================= */
+
+.closing {
+  padding: 100px 20px;
+
+  background: #102a43;
+}
+
+.closingContent {
+  max-width: 800px;
+  margin: 0 auto;
+
+  text-align: center;
+}
+
+.closingContent > span {
+  display: block;
+  margin-bottom: 18px;
+
+  color: #73bdf2;
+
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+
+.closingContent h2 {
+  margin: 0 0 20px;
+
+  color: #ffffff;
+
+  font-size: 38px;
+  line-height: 1.3;
+  font-weight: 800;
+}
+
+.closingContent h2 strong {
+  color: #73bdf2;
+}
+
+.closingContent p {
+  margin: 0;
+
+  color: #c7d8e8;
+
+  font-size: 16px;
+  line-height: 1.9;
+}
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 90px 20px 75px;
+  }
+
+  .hero h1 {
+    font-size: 44px;
+  }
+
+  .introduction {
+    padding: 70px 20px;
+  }
+
+  .introduction h2 {
+    font-size: 32px;
+  }
+
+  .policiesSection {
+    padding: 75px 20px 90px;
+  }
+
+  .sectionHeading h2 {
+    font-size: 34px;
+  }
+
+  .policyGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .closing {
+    padding: 75px 20px;
+  }
+
+  .closingContent h2 {
+    font-size: 32px;
+  }
+}
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 480px) {
+  .hero {
+    padding: 70px 18px 60px;
+  }
+
+  .heroSubtitle {
+    font-size: 12px;
+    letter-spacing: 2px;
+  }
+
+  .hero h1 {
+    font-size: 36px;
+  }
+
+  .hero p {
+    font-size: 15px;
+  }
+
+  .introduction {
+    padding: 60px 18px;
+  }
+
+  .introduction h2 {
+    font-size: 28px;
+  }
+
+  .introduction p {
+    font-size: 15px;
+  }
+
+  .policiesSection {
+    padding: 60px 15px 70px;
+  }
+
+  .sectionHeading {
+    margin-bottom: 40px;
+  }
+
+  .sectionHeading h2 {
+    font-size: 29px;
+  }
+
+  .sectionHeading p {
+    font-size: 15px;
+  }
+
+  .policyCard {
+    padding: 25px 20px;
+  }
+
+  .policyContent h3 {
+    font-size: 20px;
+  }
+
+  .policyContent p {
+    font-size: 14px;
+    line-height: 1.8;
+  }
+
+  .closing {
+    padding: 65px 18px;
+  }
+
+  .closingContent h2 {
+    font-size: 28px;
+  }
+
+  .closingContent p {
+    font-size: 15px;
+  }
+}
