@@ -15,34 +15,31 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: {
-    default: "Crystal Marine | Mooring & STS Marine Services in Africa",
-    template: "%s | Crystal Marine",
-  },
+  title: "Crystal Marine",
   description:
-    "Crystal Marine provides world-class maritime services across Africa — mooring coordination, ship-to-ship (STS) transfer, river pilotage and terminal management — delivered by certified mooring masters in line with MARPOL and OCIMF guidelines, with 24-hour operational support.",
-  keywords: [
-    "Crystal Marine",
-    "ship to ship transfer",
-    "STS operations Africa",
-    "mooring coordination",
-    "mooring masters",
-    "river pilotage",
-    "marine logistics Nigeria",
-    "terminal management",
-  ],
-  icons: {
-    icon: "/images/crystal-marine-logo.png",
-  },
+    "Crystal Marine provides world-class maritime services across Africa — mooring coordination, ship-to-ship (STS) transfer, river pilotage and terminal management, backed by 24-hour operational support.",
+  icons: "/images/crystal-marine-logo.png",
   openGraph: {
-    title: "Crystal Marine | Mooring & STS Marine Services in Africa",
-    description:
-      "World-class mooring coordination, STS transfer, and pilotage services across Africa, backed by 15+ years of international marine expertise.",
-    url: "https://crystalmarine-africa.com",
-    siteName: "Crystal Marine",
-    images: ["/images/crystal-marine-logo.png"],
-    locale: "en_US",
     type: "website",
+    title: "Crystal Marine | Mooring & STS Marine Services Across Africa",
+    description:
+      "15+ years of international STS expertise, upstream marine services and shipping — safe, reliable mooring and pilotage operations across Africa, backed by 24-hour support.",
+    url: "https://crystalmarine-africa.com/",
+    siteName: "Crystal Marine",
+    images: [
+      {
+        url: "https://crystalmarine-africa.com/images/meta.jpg",
+        width: 1200,
+        height: 630,
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Crystal Marine | Mooring & STS Marine Services Across Africa",
+    description:
+      "15+ years of international STS expertise, upstream marine services and shipping — safe, reliable mooring and pilotage operations across Africa, backed by 24-hour support.",
+    images: ["https://crystalmarine-africa.com/images/meta.jpg"],
   },
 };
 
