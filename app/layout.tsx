@@ -24,11 +24,11 @@ export const metadata: Metadata = {
     title: "Crystal Marine | Mooring & STS Marine Services Across Africa",
     description:
       "15+ years of international STS expertise, upstream marine services and shipping — safe, reliable mooring and pilotage operations across Africa, backed by 24-hour support.",
-    url: "https://crystalmarine-africa.com/",
+    url: "https://crystalmarine-africa.netlify.app/",
     siteName: "Crystal Marine",
     images: [
       {
-        url: "https://crystalmarine-africa.com/images/meta.jpg",
+        url: "https://crystalmarine-africa.netlify.app/images/meta.jpg",
         width: 1200,
         height: 630,
       },
@@ -39,10 +39,9 @@ export const metadata: Metadata = {
     title: "Crystal Marine | Mooring & STS Marine Services Across Africa",
     description:
       "15+ years of international STS expertise, upstream marine services and shipping — safe, reliable mooring and pilotage operations across Africa, backed by 24-hour support.",
-    images: ["https://crystalmarine-africa.com/images/meta.jpg"],
+    images: ["https://crystalmarine-africa.netlify.app/images/meta.jpg"],
   },
 };
-
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
