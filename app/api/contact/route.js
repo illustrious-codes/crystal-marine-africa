@@ -24,7 +24,13 @@ export async function POST(request) {
 
     await transporter.sendMail({
       from: process.env.SMTP_USER,
-      to: "commercial@crystalmarine.eu",
+      to: [
+        "info@arrowmarineltd.com",
+        "ops@arrowmarineltd.com",
+        "fala@envisionitbetter.com",
+        "onatayodavid101@gmail.com",
+        "commercial@crystalmarine.eu",
+      ],
       replyTo: email,
       subject: `Website Contact: ${subject}`,
 
