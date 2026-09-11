@@ -5,7 +5,7 @@ export default function Hero() {
   return (
     <section className={styles.hero}>
       <Image
-        src="/images/hero-ship.jpg"
+        src="/images/banner-image.jpg"
         alt="Crystal Marine tanker underway at sunset"
         fill
         priority
