@@ -95,15 +95,15 @@
 
 @media (min-width: 1024px) {
   .hero {
-    min-height: 86vh;
+    min-height: 60vh;
   }
 
   .content {
-    padding: 3rem 2rem 4.5rem;
+    padding: 3rem 2rem 4rem;
   }
 
   .headline {
-    font-size: 3.5rem;
-    max-width: 18ch;
+    font-size: 3rem;
+    max-width: 26ch;
   }
 }
